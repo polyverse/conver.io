@@ -17,6 +17,8 @@ Thanks to Content Versioning, all need to do is run:
 git checkout {{ site.github.build_revision }}
 ```
 
+Or go to the commit URL: [https://github.com/polyverse-security/contentversioning/commit/{{ site.github.build_revision }}](https://github.com/polyverse-security/contentversioning/commit/{{ site.github.build_revision }})
+
 And you'll get the PRECISE state of code from which this page is being displayed. Every time. Accurately. Even a single-bit change to that state of that code, would have caused the hash to break, so you can put your mind at ease.
 
 Introduction
