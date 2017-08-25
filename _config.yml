@@ -1,1 +1,5 @@
+title: Content Versioning {{ site.github.build_revision }}
+description: Describes the importance of Content-based Versioning in an increasingly Agile world
+show_downloads: false
+google_analytics: UA-65028710-4
 theme: jekyll-theme-hacker
