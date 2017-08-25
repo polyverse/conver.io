@@ -15,7 +15,7 @@ Introduction
 
 
 
-Semantic Versioning Specification (SemVer)
+Content Versioning Specification (ConVer)
 ------------------------------------------
 
 
