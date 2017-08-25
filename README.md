@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+Content-based Versioning {{ site.github.build_revision }}
+==============================
 
-You can use the [editor on GitHub](https://github.com/polyverse-security/contentversioning/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Summary
+-------
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Given a digital asset (source code, binaries, groups of files, images, videos, etc.), run a cryptographically-secure hash over the bits that comprise that asset, and use the hash as the version for that asset.
+1. Identify exactly what comprises "an asset". It may be convenient, though not necessary, to tar/zip a group of files together.
+2. Pick a currently-known cryptographically-secure Hash function. For example SHA256, as of the time this was last versioned @{{ site.github.build_revision }}
+3. Use this hash as the version of that asset. The version of this document is: {{ site.github.build_revision }}
+4. Optionally, to avoid ambiguity, prefix the hash function name, separated by a colon, behind the hash value. The unambiguous version of this document is: sha1:{{ site.github.build_revision }}
 
-### Markdown
+Introduction
+------------
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+Semantic Versioning Specification (SemVer)
+------------------------------------------
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+Why Use Content Versioning?
+----------------------------
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+FAQ
+---
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### How do I determine which version comes first?
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/polyverse-security/contentversioning/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+About
+-----
 
-### Support or Contact
+The Content Versioning specification is authored and sponsored by [Polyverse Corporation](https://polyverse.io).
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you'd like to leave feedback, please [open an issue on
+GitHub](https://github.com/polyverse-security/contentversioning/issues).
+
+
+License
+-------
+
+Creative Commons - CC BY 3.0
+http://creativecommons.org/licenses/by/3.0/
