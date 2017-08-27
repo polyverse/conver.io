@@ -15,23 +15,23 @@ Example
 
 Want to know precisely how to get the source contents of THIS page you're seeing? The [Github Repository](https://github.com/polyverse-security/contentversioning) is fairly obvious. Even if you had a label-based version such as v1.5.2 or release-5, you still wouldn't know whether it's a branch or a tag and whether that ref hasn't been moved.
 
-Thanks to Content Versioning, all need to do is run:
+Thanks to Content Versioning, all you need to do is run:
 ```
 git checkout {{ site.github.build_revision }}
 ```
 
 Or go to the commit URL: [https://github.com/polyverse-security/contentversioning/commit/{{ site.github.build_revision }}](https://github.com/polyverse-security/contentversioning/commit/{{ site.github.build_revision }})
 
-And you'll get the PRECISE state of code from which this page is being displayed. Every time. Accurately. Even a single-bit change to that state of that code, would have caused the hash to break, so you can put your mind at ease.
+And you'll get the PRECISE state of code from which this page is being displayed. Every time. Accurately. Even a single-bit change to that state of that code would have caused the hash to break, so you can put your mind at ease.
 
 Introduction
 ------------
 
-*Content-based Versioning* is a methodology of Versioning that identifies *a specific manifestation of bits*. Whether it be a document, an executable, a package, a system, a hardware schematic or so much more. A *version* of that asset is the unambiguous identification of that exact asset.
+*Content-based Versioning* is a methodology of Versioning that identifies *a specific manifestation of bits*. Whether it be a document, an executable, a package, a system, a hardware schematic, or so much more. A *version* of that asset is the unambiguous identification of that exact asset.
 
-Traditional Label-based Versioning, one wherein you apply some arbitrary label as a version, does not scale well in an agile and experimentative world. It leads to confusion and conflict. The ability to name things accurately, reliably, consistently and in a manner that anyone else can verify that they are looking at exactly what you meant them to look at (non-repudiability) is an essential tool in the agile security sandbox.
+Traditional Label-based Versioning, one wherein you apply some arbitrary label as a version, does not scale well in an agile and experimentative world. It leads to confusion and conflict. The ability to name things accurately, reliably, consistently, and in a manner that anyone else can verify that they are looking at exactly what you meant them to look at (non-repudiability), is an essential tool in the agile security sandbox.
 
-Content Versioning has many distinct advantages over label-based versioning. First and foremost, you no longer have to maintain a correlation table that ties a particular label to a particular asset. Secondly, you can verify if the asset you have is the one that you wanted, without making external service calls or referencing metadata. Third, chain-of-trust becomes a lot easier - instead of communicating an asset label, some sort of signing key, and some sort of additional verification has, all you ever do is communicate the single hash that conveys exactly what the receipient should get.
+Content Versioning has many distinct advantages over label-based versioning. First and foremost, you no longer have to maintain a correlation table that ties a particular label to a particular asset. Secondly, you can verify if the asset you have is the one that you wanted, without making external service calls or referencing metadata. Third, chain-of-trust becomes a lot easier - instead of communicating an asset label, some sort of signing key, and some sort of additional verification hash, all you ever do is communicate the single hash that conveys exactly what the receipient should get.
 
 It also brings a lot of auxiliary benefits such as never having to worry about what the prefixes/suffixes should be, what they mean, etc.
 
