@@ -13,7 +13,7 @@ Given a digital asset (source code, binaries, groups of files, images, videos, e
 Example
 -------
 
-Want to know precisely how to get the source contents of THIS page you're seeing? The [Github Repository](https://github.com/polyverse-security/contentversioning) is faily obvious. Even if you had a label-based version such as v1.5.2 or release-5, you still wouldn't know whether it's a branch or a tag and whether that ref hasn't been moved.
+Want to know precisely how to get the source contents of THIS page you're seeing? The [Github Repository](https://github.com/polyverse-security/contentversioning) is fairly obvious. Even if you had a label-based version such as v1.5.2 or release-5, you still wouldn't know whether it's a branch or a tag and whether that ref hasn't been moved.
 
 Thanks to Content Versioning, all need to do is run:
 ```
