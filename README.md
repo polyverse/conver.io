@@ -13,14 +13,14 @@ Given a digital asset (source code, binaries, groups of files, images, videos, e
 Example
 -------
 
-Want to know precisely how to get the source contents of THIS page you're seeing? The [Github Repository](https://github.com/polyverse-security/contentversioning) is fairly obvious. Even if you had a label-based version such as v1.5.2 or release-5, you still wouldn't know whether it's a branch or a tag and whether that ref hasn't been moved.
+Want to know precisely how to get the source contents of THIS page you're seeing? The [Github Repository](https://github.com/polyverse/conver.io) is fairly obvious. Even if you had a label-based version such as v1.5.2 or release-5, you still wouldn't know whether it's a branch or a tag and whether that ref hasn't been moved.
 
 Thanks to Content Versioning, all you need to do is run:
 ```
 git checkout {{ site.github.build_revision }}
 ```
 
-Or go to the commit URL: [https://github.com/polyverse-security/contentversioning/commit/{{ site.github.build_revision }}](https://github.com/polyverse-security/contentversioning/commit/{{ site.github.build_revision }})
+Or go to the commit URL: [https://github.com/polyverse/conver.io/commit/{{ site.github.build_revision }}](https://github.com/polyverse/conver.io/commit/{{ site.github.build_revision }})
 
 And you'll get the PRECISE state of code from which this page is being displayed. Every time. Accurately. Even a single-bit change to that state of that code would have caused the hash to break, so you can put your mind at ease.
 
@@ -69,10 +69,10 @@ This means that you now have a good forcing function to ensure that "latest and 
 About
 -----
 
-The Content Versioning specification is authored and sponsored by [Polyverse Corporation](https://polyverse.io).
+The Content Versioning specification is authored and sponsored by [Polyverse Corporation](https://polyverse.com).
 
 If you'd like to leave feedback, please [open an issue on
-GitHub](https://github.com/polyverse-security/contentversioning/issues).
+GitHub](https://github.com/polyverse/conver.io/issues).
 
 
 License
